@@ -25,7 +25,11 @@
 16. Post the above command you will now see S3 folder will create files which will have 
     the md5 id (through which data version will be tracked) as well as actual data related
     to the specific version
-17. 
+17. Now make changes to mycode.py to append a new row in data, check changes via 
+    "dvc status"
+18. Again do "dvc commit" and then "dvc push"
+19. Then git add-commit-push (we're saving V2 of our data at this point)
+20. at any point, check log of changes in git using "git log --oneline"
 
 
 
