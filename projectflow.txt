@@ -36,7 +36,7 @@
     Next, we will need to run the mycode.py file to ensure data "data folder" is up 
     to date
     Finally, do git add-commit-push and dvc commit and dvc push to ensure everything
-    is updated
+    is updated.
 
 
 
