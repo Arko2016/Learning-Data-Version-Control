@@ -13,6 +13,10 @@ df = pd.DataFrame(data)
 new_data_row = {'Name': 'John', 'Age': 51, 'City': 'Chicago'}
 df.loc[len(df.index)] = new_data_row
 
+#Append another row to dataframe
+new_data_row2 = {'Name' : "Doug", "Age" : 28, "City" : 'Florida'}
+df.loc[len(df.index)] = new_data_row2
+
 #create directory for storing data files
 data_dir = "data"
 os.makedirs(data_dir, exist_ok=True)
