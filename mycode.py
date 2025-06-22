@@ -3,11 +3,15 @@ import os
 
 #create sample dataframe
 data = {
-    'Name' : ['Alice', 'Bob', 'Charlie'],
-    'Age' : [25,30,35],
-    'City' : ['NY', 'LA', 'Chicago']
+    'Name' : ['Alice', 'Bob', 'Charlie', 'Jane'],
+    'Age' : [25,30,35,29],
+    'City' : ['New York', 'Los Angeles', 'Chicago', 'Boston']
 }
 df = pd.DataFrame(data)
+
+#Append a new row to the dataframe
+new_data_row = {'Name': 'John', 'Age': 51, 'City': 'Chicago'}
+df.loc[len(df.index)] = new_data_row
 
 #create directory for storing data files
 data_dir = "data"
